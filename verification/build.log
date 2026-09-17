@@ -1,0 +1,129 @@
+✔ [3106/3218] Built MinimalInvariant (1.3s)
+✔ [3173/3218] Built Core (2.2s)
+✔ [3175/3218] Built MinimalHitting (1.6s)
+✔ [3176/3218] Built ConnectedCompactLimits (2.4s)
+ℹ [3177/3218] Built TernaryForm (2.2s)
+info: TernaryForm.lean:72:0: 'JSP400.ternaryForm_indefinite' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: TernaryForm.lean:73:0: 'JSP400.ternaryForm_nondegenerate' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: TernaryForm.lean:74:0: 'JSP400.ternaryForm_not_proportionalToRational' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3178/3218] Built Quantifiers (3.9s)
+✔ [3179/3218] Built CurveTruncation (2.4s)
+ℹ [3180/3218] Built StandardForm (2.9s)
+info: StandardForm.lean:66:0: 'JSP400.standardForm_standardizingSL' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3181/3218] Built BoundaryBumping (2.5s)
+✔ [3182/3312] Built PositiveWitness (3.1s)
+✔ [3239/3312] Built AffineSubgroup (2.5s)
+ℹ [3240/3312] Built FormStabilizer (2.7s)
+info: FormStabilizer.lean:56:0: 'JSP400.conjugate_mem_formStabilizer_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FormStabilizer.lean:57:0: 'JSP400.standardizingSL_conjugates' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3243/3312] Built MinimalSubsystem (1.4s)
+✔ [3244/3312] Built MinimalCollision (1.6s)
+✔ [3246/3322] Built AffineTranslations (2.2s)
+✔ [3247/3322] Built ReducedBasisBounds (4.1s)
+ℹ [3248/3322] Built LatticeSpace (2.6s)
+info: LatticeSpace.lean:163:0: 'JSP400.quotientLatticePoints_smul' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3249/3322] Built SmallVectors (2.7s)
+ℹ [3251/3322] Built UnipotentGroups (3.3s)
+info: UnipotentGroups.lean:105:0: 'JSP400.unipotentOne_mem_standardStabilizer' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: UnipotentGroups.lean:106:0: 'JSP400.diagonalFlow_unipotentOne' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: UnipotentGroups.lean:107:0: 'JSP400.diagonalFlow_unipotentTwo' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3252/3322] Built OrbitQuotientTopology (1.5s)
+✔ [3254/3322] Built AffineClassification (2.4s)
+✔ [3256/3322] Built CompactRepresentatives (2.6s)
+✔ [3258/3322] Built CompactLattices (2.5s)
+ℹ [3259/3322] Built Shearing (3.3s)
+info: Shearing.lean:113:0: 'JSP400.shearConjugate_entry01' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Shearing.lean:114:0: 'JSP400.shearLevelSet_component_not_isCompact' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3260/3322] Built LatticeCollision (2.4s)
+✔ [3261/3322] Built MahlerPotential (2.0s)
+✔ [3262/3322] Built CompactGroupQuotient (2.5s)
+✔ [3263/3322] Built CompactStabilizers (2.0s)
+ℹ [3264/3322] Built ShearOrbit (2.7s)
+info: ShearOrbit.lean:141:0: 'JSP400.shearConjugate_isClosedEmbedding' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ShearOrbit.lean:142:0: 'JSP400.shearOrbitSlice_component_not_isCompact' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3265/3322] Built MahlerBasisChanges (3.1s)
+✔ [3266/3322] Built IrrationalIntegerStabilizer (4.1s)
+✔ [3267/3322] Built DiagonalContraction (3.3s)
+ℹ [3268/3322] Built ShearLemma6C (3.1s)
+info: ShearLemma6C.lean:113:0: 'JSP400.margulis_lemma6_C' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3269/3322] Built MahlerGram (2.9s)
+✔ [3270/3322] Built UpperUnipotentCompact (3.3s)
+✔ [3271/3322] Built ShearFixedSpace (4.5s)
+✔ [3272/3322] Built MahlerDualGram (2.3s)
+✔ [3273/3322] Built MahlerSizeReduction (2.3s)
+✔ [3274/3322] Built UpperGeneration (2.2s)
+✔ [3275/3322] Built NilpotentSection (3.5s)
+✔ [3276/3322] Built ShearOrbitClosure (2.8s)
+✔ [3277/3322] Built ShearNormalization (2.5s)
+✔ [3278/3322] Built ShearFixedRays (2.3s)
+✔ [3279/3322] Built ShearCurves (3.1s)
+✔ [3280/3322] Built ShearFlag (9.4s)
+✔ [3281/3322] Built ShearDescent (2.6s)
+✔ [3282/3322] Built ShearCentralizer (4.7s)
+ℹ [3283/3322] Built ShearLemma6B2 (2.3s)
+info: ShearLemma6B2.lean:54:0: 'JSP400.margulis_lemma6_B2' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3284/3322] Built ShearClosureLift (2.4s)
+ℹ [3285/3322] Built GramShear (6.0s)
+info: GramShear.lean:261:0: 'JSP400.gramShear_sub_mem_previousFlag' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3286/3322] Built ShearB1 (2.7s)
+✔ [3287/3322] Built UpperDiagonalEscape (3.3s)
+ℹ [3288/3322] Built GramQuotient (4.8s)
+info: GramQuotient.lean:79:0: 'JSP400.gramMatrix_eq_iff_mul_inv_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3289/3322] Built GramCurves (2.5s)
+info: GramCurves.lean:99:0: 'JSP400.exists_unbounded_gram_curve' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3290/3322] Built ShearNormalizer (5.6s)
+info: ShearNormalizer.lean:101:0: 'JSP400.margulis_lemma6_A2' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3291/3322] Built GramTriangular (16s)
+✔ [3292/3322] Built SignedShearEscape (3.9s)
+ℹ [3293/3322] Built GramDescent (2.6s)
+info: GramDescent.lean:108:0: 'JSP400.gram_fixed_component_noncompact_of_layer' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3294/3322] Built MargulisLemma6 (2.3s)
+info: MargulisLemma6.lean:34:0: 'JSP400.margulis_lemma6' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3295/3322] Built GramOrbitClosure (2.0s)
+info: GramOrbitClosure.lean:112:0: 'JSP400.gram_orbit_closure_contains_ray' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3296/3322] Built GramSection (4.0s)
+ℹ [3297/3322] Built GramHull (2.0s)
+info: GramHull.lean:108:0: 'JSP400.lemma7_fixed_case' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3298/3322] Built GramClosureLift (2.4s)
+info: GramClosureLift.lean:61:0: 'JSP400.mem_closure_of_gramMatrix_mem_closure' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3299/3322] Built PrincipalRepresentation (3.5s)
+info: PrincipalRepresentation.lean:155:0: 'JSP400.principalOrbitMap_eq_base_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: PrincipalRepresentation.lean:156:0: 'JSP400.principalOrbitMap_skew' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3300/3322] Built MargulisLemma7 (2.5s)
+info: MargulisLemma7.lean:38:0: 'JSP400.margulis_lemma7' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3301/3322] Built UnipotentOneNormalizer (2.5s)
+✔ [3302/3322] Built NoncompactTernaryStabilizer (3.7s)
+ℹ [3303/3322] Built PrincipalFixed (6.6s)
+info: PrincipalFixed.lean:154:0: 'JSP400.mem_principalNormalizer_of_fixed_orbit' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3304/3322] Built AffineMatrixBridge (3.6s)
+✔ [3305/3322] Built CompactHOrbit (3.5s)
+✔ [3306/3322] Built StandardizedQuotient (2.8s)
+ℹ [3307/3322] Built PrincipalSection (2.0s)
+info: PrincipalSection.lean:126:0: 'JSP400.principalSection_right_coset' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3308/3322] Built NormalizerCoordinates (7.6s)
+info: NormalizerCoordinates.lean:100:0: 'JSP400.principalNormalizer_factor' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3309/3322] Built PositiveNormalizerQuotient (2.8s)
+✔ [3310/3322] Built DiagonalInvariance (2.9s)
+ℹ [3311/3322] Built PrincipalFlag (55s)
+info: PrincipalFlag.lean:202:0: 'JSP400.principalAction_sub_mem_previousFlag' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3312/3322] Built PrincipalCurves (2.8s)
+info: PrincipalCurves.lean:108:0: 'JSP400.exists_unbounded_principal_curve' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3313/3322] Built PrincipalDescent (2.3s)
+info: PrincipalDescent.lean:107:0: 'JSP400.principal_fixed_component_noncompact_of_layer' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3314/3322] Built PrincipalClosure (2.4s)
+info: PrincipalClosure.lean:179:0: 'JSP400.principal_normalizer_enlargement_of_outside_normalizer' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: PrincipalClosure.lean:180:0: 'JSP400.principal_normalizer_enlargement' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3315/3322] Built MargulisLemma5 (2.3s)
+info: MargulisLemma5.lean:78:0: 'JSP400.margulis_lemma5_II' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3316/3322] Built CollisionInvariant (2.4s)
+ℹ [3317/3322] Built MargulisTheorem2 (2.1s)
+info: MargulisTheorem2.lean:86:0: 'JSP400.margulis_theorem2_quotient' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MargulisTheorem2.lean:87:0: 'JSP400.margulis_theorem2' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3318/3322] Built NoncompactOrbit (2.3s)
+✔ [3319/3322] Built MahlerCompactness (2.6s)
+ℹ [3320/3322] Built MahlerBoundedBasis (5.4s)
+info: MahlerBoundedBasis.lean:133:0: 'JSP400.Mahler.bounded_reduced_representatives' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [3321/3322] Built FinalTheorem (2.2s)
+Build completed successfully (3322 jobs).
