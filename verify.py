@@ -73,7 +73,8 @@ for name, cmd in [('build', ['lake', 'build']),
         result['audited_theorems'] = len(audits)
     results.append(result)
 checked_sources = sorted({root/(name+'.lean') for name in library_roots}
-                         | {root/'Audit.lean', root/'lakefile.lean'})
+                         | {root/'Audit.lean', root/'lakefile.lean', root/'verify.py',
+                            root/'lean-toolchain', root/'lake-manifest.json', root/'README.md'})
 manifest = {
     'started_utc': started_utc,
     'completed_utc': datetime.now(timezone.utc).isoformat(),
