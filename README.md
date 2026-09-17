@@ -33,3 +33,6 @@ python3 verify.py
 The script builds every project module, checks the final theorems and intermediate endpoints with `#print axioms`, verifies the pinned Mathlib revision, and scans project Lean sources for unfinished proofs and added axioms. The allowed logical dependencies are `propext`, `Classical.choice`, and `Quot.sound`. `verification/manifest.json` records UTC times, the Git revision at verification, exact source hashes, and command results. The GitHub Actions workflow repeats the build and audit.
 
 All mathematical credit belongs to the cited human authors. The Lean proof is independently written and uses Mathlib under its existing license.
+
+Formalization contributor: cronrpc. The [contribution record](ATTRIBUTION.md)
+identifies the project role and distinguishes it from the original mathematics.
