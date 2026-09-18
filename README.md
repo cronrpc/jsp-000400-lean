@@ -30,7 +30,7 @@ lake exe cache get
 python3 verify.py
 ```
 
-The script builds every project module, checks the final theorems and intermediate endpoints with `#print axioms`, verifies the pinned Mathlib revision, and scans project Lean sources for unfinished proofs and added axioms. The allowed logical dependencies are `propext`, `Classical.choice`, and `Quot.sound`. `verification/manifest.json` records UTC times, the Git revision at verification, exact source hashes, and command results. The GitHub Actions workflow repeats the build and audit.
+The script builds every project module, checks the final theorems and intermediate endpoints with `#print axioms`, verifies the pinned Mathlib revision, and scans project Lean sources for unfinished proofs and added axioms. The allowed logical dependencies are `propext`, `Classical.choice`, and `Quot.sound`. `verification/manifest.json` records UTC times, the Git revision at verification, exact source hashes, and command results. The GitHub Actions workflow repeats the build and audit. The verifier requires a separate direct axiom report for each of the four final declarations, including `JSP400.dual_statement`, and records their dependencies individually as `final_theorem_axioms` in the manifest. Missing any final declaration from the audit fails before the build. The complete audit contains 387 named endpoints.
 
 All mathematical credit belongs to the cited human authors. The Lean proof is independently written and uses Mathlib under its existing license.
 

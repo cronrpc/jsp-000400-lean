@@ -447,5 +447,6 @@ import MinimalHitting
 #print axioms JSP400.arbitrarily_short_vectors
 #print axioms JSP400.integer_small_values
 #print axioms JSP400.positive_statement
+#print axioms JSP400.dual_statement
 #print axioms JSP400.erdos_496
 #print axioms JSP400.erdos_496_large_denominator

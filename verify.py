@@ -17,6 +17,16 @@ library_roots = re.findall(r'`([A-Za-z0-9_]+)', (root/'lakefile.lean').read_text
 expected_modules = {p.stem for p in root.glob('*.lean')} - {'Audit', 'lakefile'}
 assert set(library_roots) == expected_modules, (set(library_roots), expected_modules)
 
+FINAL_THEOREMS = [
+    'JSP400.positive_statement', 'JSP400.dual_statement',
+    'JSP400.erdos_496', 'JSP400.erdos_496_large_denominator',
+]
+expected_audits = re.findall(r'^#print axioms (\S+)', (root/'Audit.lean').read_text(), re.M)
+missing_final_audits = set(FINAL_THEOREMS) - set(expected_audits)
+if missing_final_audits:
+    raise RuntimeError(f'Final theorems missing direct axiom audits: {sorted(missing_final_audits)}')
+final_theorem_axioms = {}
+
 def code_without_comments(source):
     """Remove nested Lean comments and strings before checking proof commands."""
     output = []
@@ -64,13 +74,22 @@ for name, cmd in [('build', ['lake', 'build']),
         sys.exit(proc.returncode)
     if name == 'axioms':
         audits = re.findall(r"'([^']+)' depends on axioms: \[([^\]]*)\]", output)
-        expected = re.findall(r'^#print axioms (\S+)', (root/'Audit.lean').read_text(), re.M)
+        expected = expected_audits
         assert set(expected) == {n for n, _ in audits}, (expected, audits)
         allowed = {'propext', 'Classical.choice', 'Quot.sound'}
         for theorem, dependencies in audits:
             actual = {x.strip() for x in dependencies.split(',') if x.strip()}
             assert actual <= allowed, (theorem, actual)
+        dependencies_by_theorem = {
+            theorem: sorted(x.strip() for x in dependencies.split(',') if x.strip())
+            for theorem, dependencies in audits
+        }
+        missing_final_results = set(FINAL_THEOREMS) - set(dependencies_by_theorem)
+        if missing_final_results:
+            raise RuntimeError(f'Final theorems missing axiom results: {sorted(missing_final_results)}')
+        final_theorem_axioms = {name: dependencies_by_theorem[name] for name in FINAL_THEOREMS}
         result['audited_theorems'] = len(audits)
+        result['directly_audited_final_theorems'] = FINAL_THEOREMS
     results.append(result)
 checked_sources = sorted({root/(name+'.lean') for name in library_roots}
                          | {root/'Audit.lean', root/'lakefile.lean', root/'verify.py',
@@ -89,8 +108,8 @@ manifest = {
     'complete_problem_proved': True,
     'proved_target': 'For every positive irrational real alpha and every epsilon > 0, '
                      'both inequalities of Erdos I.34 have positive integer witnesses.',
-    'final_theorems': ['JSP400.positive_statement', 'JSP400.dual_statement',
-                       'JSP400.erdos_496', 'JSP400.erdos_496_large_denominator'],
+    'final_theorems': FINAL_THEOREMS,
+    'final_theorem_axioms': final_theorem_axioms,
 }
 (out/'manifest.json').write_text(json.dumps(manifest, indent=2)+'\n')
 print(json.dumps(manifest, indent=2))
