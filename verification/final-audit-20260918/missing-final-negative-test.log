@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/mnt/c/Users/b3uja/Documents/ChatGPT/sunge/review/submission-format-audit/2026-09-18/fix400/missing-final-guard-nxcq_klj/verify.py", line 27, in <module>
+    raise RuntimeError(f'Final theorems missing direct axiom audits: {sorted(missing_final_audits)}')
+RuntimeError: Final theorems missing direct axiom audits: ['JSP400.dual_statement']

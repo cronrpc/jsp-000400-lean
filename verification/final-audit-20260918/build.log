@@ -1,0 +1,73 @@
+ℹ [3098/3167] Replayed TernaryForm
+info: TernaryForm.lean:72:0: 'JSP400.ternaryForm_indefinite' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: TernaryForm.lean:73:0: 'JSP400.ternaryForm_nondegenerate' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: TernaryForm.lean:74:0: 'JSP400.ternaryForm_not_proportionalToRational' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3101/3167] Replayed StandardForm
+info: StandardForm.lean:66:0: 'JSP400.standardForm_standardizingSL' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3102/3167] Replayed FormStabilizer
+info: FormStabilizer.lean:56:0: 'JSP400.conjugate_mem_formStabilizer_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: FormStabilizer.lean:57:0: 'JSP400.standardizingSL_conjugates' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3103/3167] Replayed UnipotentGroups
+info: UnipotentGroups.lean:105:0: 'JSP400.unipotentOne_mem_standardStabilizer' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: UnipotentGroups.lean:106:0: 'JSP400.diagonalFlow_unipotentOne' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: UnipotentGroups.lean:107:0: 'JSP400.diagonalFlow_unipotentTwo' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3113/3167] Replayed LatticeSpace
+info: LatticeSpace.lean:163:0: 'JSP400.quotientLatticePoints_smul' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3186/3273] Replayed Shearing
+info: Shearing.lean:113:0: 'JSP400.shearConjugate_entry01' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: Shearing.lean:114:0: 'JSP400.shearLevelSet_component_not_isCompact' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3187/3273] Replayed ShearOrbit
+info: ShearOrbit.lean:141:0: 'JSP400.shearConjugate_isClosedEmbedding' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ShearOrbit.lean:142:0: 'JSP400.shearOrbitSlice_component_not_isCompact' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3188/3273] Replayed ShearLemma6C
+info: ShearLemma6C.lean:113:0: 'JSP400.margulis_lemma6_C' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3200/3273] Replayed ShearLemma6B2
+info: ShearLemma6B2.lean:54:0: 'JSP400.margulis_lemma6_B2' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3203/3273] Replayed ShearNormalizer
+info: ShearNormalizer.lean:101:0: 'JSP400.margulis_lemma6_A2' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3208/3273] Replayed MargulisLemma6
+info: MargulisLemma6.lean:34:0: 'JSP400.margulis_lemma6' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3212/3273] Replayed GramShear
+info: GramShear.lean:261:0: 'JSP400.gramShear_sub_mem_previousFlag' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3213/3273] Replayed GramCurves
+info: GramCurves.lean:99:0: 'JSP400.exists_unbounded_gram_curve' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3214/3273] Replayed GramDescent
+info: GramDescent.lean:108:0: 'JSP400.gram_fixed_component_noncompact_of_layer' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3215/3273] Replayed GramOrbitClosure
+info: GramOrbitClosure.lean:112:0: 'JSP400.gram_orbit_closure_contains_ray' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3216/3273] Replayed GramQuotient
+info: GramQuotient.lean:79:0: 'JSP400.gramMatrix_eq_iff_mul_inv_mem' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3217/3273] Replayed GramHull
+info: GramHull.lean:108:0: 'JSP400.lemma7_fixed_case' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3280/3322] Replayed GramClosureLift
+info: GramClosureLift.lean:61:0: 'JSP400.mem_closure_of_gramMatrix_mem_closure' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3281/3322] Replayed MargulisLemma7
+info: MargulisLemma7.lean:38:0: 'JSP400.margulis_lemma7' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3282/3322] Replayed PrincipalRepresentation
+info: PrincipalRepresentation.lean:155:0: 'JSP400.principalOrbitMap_eq_base_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: PrincipalRepresentation.lean:156:0: 'JSP400.principalOrbitMap_skew' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3283/3322] Replayed PrincipalFixed
+info: PrincipalFixed.lean:154:0: 'JSP400.mem_principalNormalizer_of_fixed_orbit' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3284/3322] Replayed PrincipalFlag
+info: PrincipalFlag.lean:202:0: 'JSP400.principalAction_sub_mem_previousFlag' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3285/3322] Replayed PrincipalCurves
+info: PrincipalCurves.lean:108:0: 'JSP400.exists_unbounded_principal_curve' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3286/3322] Replayed PrincipalDescent
+info: PrincipalDescent.lean:107:0: 'JSP400.principal_fixed_component_noncompact_of_layer' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3287/3322] Replayed PrincipalSection
+info: PrincipalSection.lean:126:0: 'JSP400.principalSection_right_coset' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3288/3322] Replayed NormalizerCoordinates
+info: NormalizerCoordinates.lean:100:0: 'JSP400.principalNormalizer_factor' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3289/3322] Replayed PrincipalClosure
+info: PrincipalClosure.lean:179:0: 'JSP400.principal_normalizer_enlargement_of_outside_normalizer' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+info: PrincipalClosure.lean:180:0: 'JSP400.principal_normalizer_enlargement' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3296/3322] Replayed MargulisLemma5
+info: MargulisLemma5.lean:78:0: 'JSP400.margulis_lemma5_II' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3306/3322] Replayed MargulisTheorem2
+info: MargulisTheorem2.lean:86:0: 'JSP400.margulis_theorem2_quotient' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: MargulisTheorem2.lean:87:0: 'JSP400.margulis_theorem2' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3320/3322] Replayed MahlerBoundedBasis
+info: MahlerBoundedBasis.lean:133:0: 'JSP400.Mahler.bounded_reduced_representatives' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully (3322 jobs).

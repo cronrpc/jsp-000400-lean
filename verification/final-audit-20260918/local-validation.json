@@ -1,0 +1,80 @@
+{
+  "started_utc": "2026-09-18T03:25:24.408068+00:00",
+  "source_commit": "e89bad0fdcfce3c6fb9d2e3de9f35b52ffdd38cd",
+  "commands": [
+    {
+      "label": "missing-final-negative-test",
+      "command": [
+        "python3",
+        "verify.py"
+      ],
+      "cwd": "/mnt/c/Users/b3uja/Documents/ChatGPT/sunge/review/submission-format-audit/2026-09-18/fix400/missing-final-guard-nxcq_klj",
+      "exit_code": 1,
+      "seconds": 0.17444344899990938,
+      "log_sha256": "245cf17c4da3338ba33789a46c1a8cbf973abcefab088b16412b7a894fa06d3b"
+    },
+    {
+      "label": "lean-version",
+      "command": [
+        "lake",
+        "env",
+        "lean",
+        "--version"
+      ],
+      "cwd": "/home/water/sunge/publish/jsp-000400-lean",
+      "exit_code": 0,
+      "seconds": 6.043614505999926,
+      "log_sha256": "cf6e65bfc214882b1c13717aae89d383a03f6bcf5c96dfbae13368cd3e07ff9d"
+    },
+    {
+      "label": "verification",
+      "command": [
+        "python3",
+        "verify.py"
+      ],
+      "cwd": "/home/water/sunge/publish/jsp-000400-lean",
+      "exit_code": 0,
+      "seconds": 21.972585985000023,
+      "log_sha256": "1b072f1517481b8553188b959cab0ce3eca28cb0210e7a349cac5bfca92b696b"
+    },
+    {
+      "label": "final-kernel-replay",
+      "command": [
+        "lake",
+        "env",
+        "leanchecker",
+        "FinalTheorem"
+      ],
+      "cwd": "/home/water/sunge/publish/jsp-000400-lean",
+      "exit_code": 0,
+      "seconds": 7.190501144999871,
+      "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "verification_mode": "existing project build cache, dependency locks checked; fresh direct audit",
+  "status": "PASS",
+  "completed_utc": "2026-09-18T03:25:59.433480+00:00",
+  "audited_endpoints": 387,
+  "final_theorem_axioms": {
+    "JSP400.positive_statement": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "JSP400.dual_statement": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "JSP400.erdos_496": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "JSP400.erdos_496_large_denominator": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  }
+}

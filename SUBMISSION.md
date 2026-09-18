@@ -16,26 +16,49 @@ The mathematical solution is due to G. A. Margulis. The main source is [Indefini
 
 Independent repository: [cronrpc/jsp-000400-lean](https://github.com/cronrpc/jsp-000400-lean).
 
-Fixed proof commit: [`f9080e7480a7a1bd07df6dd8b9eacfa744e5b8f8`](https://github.com/cronrpc/jsp-000400-lean/tree/f9080e7480a7a1bd07df6dd8b9eacfa744e5b8f8).
+Current proof and audit commit: [`e89bad0fdcfce3c6fb9d2e3de9f35b52ffdd38cd`](https://github.com/cronrpc/jsp-000400-lean/tree/e89bad0fdcfce3c6fb9d2e3de9f35b52ffdd38cd).
 
 Lean: `leanprover/lean4:v4.34.0`. Mathlib: `5ed2965256430c3649e86755f9576b54eca72435`. All package revisions are locked in [lake-manifest.json](lake-manifest.json).
 
 ```sh
 git clone https://github.com/cronrpc/jsp-000400-lean.git
 cd jsp-000400-lean
-git checkout f9080e7480a7a1bd07df6dd8b9eacfa744e5b8f8
+git checkout e89bad0fdcfce3c6fb9d2e3de9f35b52ffdd38cd
 lake exe cache get
 python3 verify.py
 lake env leanchecker Core TernaryForm Quantifiers PositiveWitness StandardForm FormStabilizer UnipotentGroups SmallVectors LatticeSpace MinimalInvariant CompactRepresentatives CompactLattices CompactStabilizers DiagonalContraction UpperUnipotentCompact Shearing ShearOrbit ShearLemma6C ShearFixedSpace ShearCurves ShearFixedRays ShearNormalization ShearFlag ConnectedCompactLimits CurveTruncation BoundaryBumping ShearOrbitClosure ShearDescent ShearLemma6B2 ShearB1 ShearCentralizer ShearNormalizer NilpotentSection ShearClosureLift UpperGeneration MargulisLemma6 UpperDiagonalEscape SignedShearEscape MinimalHitting GramShear GramCurves GramDescent GramOrbitClosure GramQuotient GramHull GramTriangular GramSection GramClosureLift MargulisLemma7 PrincipalRepresentation PrincipalFixed PrincipalFlag PrincipalCurves PrincipalDescent PrincipalSection NormalizerCoordinates PrincipalClosure MargulisLemma5 MinimalCollision LatticeCollision MinimalSubsystem OrbitQuotientTopology UnipotentOneNormalizer CompactGroupQuotient CompactHOrbit AffineSubgroup AffineTranslations AffineClassification AffineMatrixBridge PositiveNormalizerQuotient DiagonalInvariance CollisionInvariant MargulisTheorem2 IrrationalIntegerStabilizer NoncompactTernaryStabilizer StandardizedQuotient NoncompactOrbit ReducedBasisBounds MahlerCompactness MahlerPotential MahlerBasisChanges MahlerGram MahlerSizeReduction MahlerDualGram MahlerBoundedBasis FinalTheorem
 ```
 
-The clean local verification started with no compiled artifacts from this project. Dependencies were freshly checked out at their locked revisions and the public Mathlib cache was retrieved. `python3 verify.py` rebuilt all 86 proof modules and audited 386 named theorem endpoints. Both commands exited 0. The permitted axiom set is `propext`, `Classical.choice`, `Quot.sound`; the complete source scan found no forbidden proof commands. Exact command results, source/configuration hashes and UTC timestamps are in the manifest. Source and third-party library licenses are retained.
+The original v1.0.0 clean local verification started with no compiled artifacts from this project. Dependencies were freshly checked out at their locked revisions and the public Mathlib cache was retrieved. `python3 verify.py` rebuilt all 86 proof modules and audited 386 named theorem endpoints. Both commands exited 0. The permitted axiom set is `propext`, `Classical.choice`, `Quot.sound`; the complete source scan found no forbidden proof commands. Exact command results, source/configuration hashes and UTC timestamps are in the manifest. Source and third-party library licenses are retained.
 
 The dedicated Lean workflow builds this same project, replays the project modules with leanchecker and runs the axiom audit. Its results are available under [repository Actions](https://github.com/cronrpc/jsp-000400-lean/actions). The ordinary awards workflows separately check record schemas, Markdown links, generated data and history.
 
-## Archived artifacts
+## Complete direct final-theorem audit
 
-The source archive is produced by `git archive` at the fixed proof commit; no dependency cache or local research workspace is included. Published release assets identify the exact build evidence.
+The supplemental verification on 2026-09-18 used commit `e89bad0fdcfce3c6fb9d2e3de9f35b52ffdd38cd`.
+It adds the direct `#print axioms JSP400.dual_statement` report and makes
+`verify.py` require separate reports for all four final declarations, both in
+the audit commands and in Lean's actual output. The mathematical proofs,
+Lean version and locked dependencies are unchanged.
+
+The local build check used the existing project cache and exited 0. The fresh
+audit reported **387 named endpoints**; a separate
+`lake env leanchecker FinalTheorem` run exited 0. Each of the four final
+declarations depends only on `propext`, `Classical.choice` and `Quot.sound`.
+A negative coverage check removed the dual-statement audit line from an
+isolated fixture and confirmed that verification exits nonzero before building.
+
+The [supplemental manifest](verification/final-audit-20260918/manifest.json)
+records the exact source commit, hashes and a `final_theorem_axioms` mapping
+for all four declarations. The [axiom output](verification/final-audit-20260918/axioms.log),
+[build output](verification/final-audit-20260918/build.log), and
+[command record](verification/final-audit-20260918/local-validation.json)
+preserve the actual results and timings. The original 386-endpoint release
+records below remain historical evidence for their original commit.
+
+## Original v1.0.0 archived artifacts
+
+The original source archive is produced by `git archive` at proof commit `f9080e7480a7a1bd07df6dd8b9eacfa744e5b8f8`; no dependency cache or local research workspace is included. Published release assets identify the exact build evidence.
 
 | Artifact | SHA-256 | Bytes |
 | --- | --- | --- |
